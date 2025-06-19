@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int i;
+    char j;
+    scanf("%d %c", &i, &j);
+    printf("Integer of %d is %c\nCharacter of %c is %d\n", i, i,j,j);
+
+    return 0;
+}
