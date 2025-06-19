@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+ int b;
+    float a;
+    char ch;
+    char str1[100], str2[100], line[100];
+    fgets(line, sizeof(line), stdin);
+    b = atoi(line);
+    fgets(line, sizeof(line), stdin);
+    a = atof(line);
+    fgets(line, sizeof(line), stdin);
+    ch = line[0];
+    fgets(str1, sizeof(str1), stdin);
+    str1[strcspn(str1, "\n")] = 0; 
+    fgets(str2, sizeof(str2), stdin);
+    str2[strcspn(str2, "\n")] = 0;
+    printf("Integer is %d\nFloat is %.2f\nCharacter is %c\nStrings are %s and %s\n", b,a,ch,str1,str2);
+    return 0;
+}
