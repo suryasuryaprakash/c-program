@@ -1,0 +1,15 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+     char a[100];
+    scanf("%s",&a);
+    printf("May I know how to learn %s!!!...\n", a);
+
+    return 0;
+}
