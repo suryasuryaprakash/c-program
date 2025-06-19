@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <limits.h>
+int main() {
+    int n, i;
+    scanf("%d", &n);  
+    int arr[n];
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);  
+    }
+    int min = INT_MAX, second_min = INT_MAX;
+    for (i = 0; i < n; i++) {
+        if (arr[i] < min) {
+            second_min = min;
+            min = arr[i];
+        } else if (arr[i] > min && arr[i] < second_min) {
+            second_min = arr[i];
+        }
+    }
+    if (second_min == INT_MAX)
+        printf("No second minimum element\n");
+    else
+        printf("%d\n", second_min);
+    return 0;
+}
