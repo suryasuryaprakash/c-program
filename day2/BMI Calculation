@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    float weight, height_cm, height_m, bmi;
+    printf("");
+    scanf("%f", &weight);
+    printf("");
+    scanf("%f", &height_cm);
+    height_m = height_cm / 100;
+    bmi = weight / (height_m * height_m);
+    if (bmi < 18.5)
+        printf("You are underweight. Have an apple daily.\n");
+    else if (bmi >= 18.5 && bmi < 25)
+        printf("You are normal. Go walking daily and maintain it.\n");
+    else if (bmi >= 25 && bmi < 30)
+        printf("You are overweight. Go to Gym daily.\n");
+    else
+        printf("You are obese. You need to see a doctor.\n");
+    return 0;
+}
