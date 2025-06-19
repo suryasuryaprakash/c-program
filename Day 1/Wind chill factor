@@ -1,0 +1,15 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+int main()
+{
+    double temperature, windVelocity;
+    scanf("%lf %lf", &temperature, &windVelocity);
+    double windChillFactor = 35.74 + (0.6215 * temperature) + ((0.4275 * temperature) - 35.75) * pow(windVelocity, 0.16);
+    printf("%.2lf\n", windChillFactor);
+    return 0;
+}
