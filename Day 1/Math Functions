@@ -1,0 +1,20 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+     double f;
+    int s, b, p;
+    scanf("%lf %d %d %d", &f, &s, &b, &p);
+    double floorResult = floor(f);
+    double ceilResult = ceil(f);
+    double sqrtResult = sqrt(s);
+    double powResult = pow(b, p);
+    printf("%.0f\n%.0f\n%.0f\n%.0f\n", floorResult, ceilResult, sqrtResult, powResult);
+
+    return 0;
+}
