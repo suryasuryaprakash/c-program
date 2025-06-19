@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int size, i, num;
+    long long product = 1;\
+    scanf("%d", &size);
+    for (i = 0; i < size; i++) {
+        scanf("%d", &num);
+        product *= num;
+    }
+    printf("The Product of list value is %.2f\n", (double)product);
+    return 0;
+}
