@@ -1,0 +1,38 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int a,b,c,d,e,f;
+    {
+         int wallLength, wallBreadth;
+    int painting1Length, painting1Breadth;
+    int painting2Length, painting2Breadth;
+    scanf("%d %d %d %d %d %d", &wallLength, &wallBreadth, &painting1Length, &painting1Breadth, &painting2Length, &painting2Breadth);
+    int wallArea = wallLength * wallBreadth;
+    int painting1Area = painting1Length * painting1Breadth;
+    int painting2Area = painting2Length * painting2Breadth;
+    if ((painting1Area + painting2Area) <= wallArea) {
+        if ((painting1Length <= wallLength && painting1Breadth <= wallBreadth) && (painting2Length <= wallLength && painting2Breadth <= wallBreadth)) {
+            if ((painting1Length + painting2Length <= wallLength) || (painting1Breadth + painting2Breadth <= wallBreadth) ||
+                (painting1Length + painting2Breadth <= wallLength) || (painting1Breadth + painting2Length <= wallBreadth) ||
+                (painting1Length + painting2Length <= wallBreadth) || (painting1Breadth + painting2Breadth <= wallLength) ||
+                (painting1Length + painting2Breadth <= wallBreadth) || (painting1Breadth + painting2Length <= wallLength)) {
+                printf("Raj can fix both painting\n");
+            } else {
+                printf("Raj cannot fix both painting\n");
+            }
+ } else {
+            printf("Raj cannot fix both painting\n");
+        }
+    } else {
+        printf("Raj cannot fix both painting\n");
+    }
+
+    }
+    return 0;
+}
