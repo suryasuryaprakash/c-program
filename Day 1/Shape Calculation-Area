@@ -1,0 +1,21 @@
+#include <stdio.h>
+#define PI 3.14159
+
+int main() {
+    int side, length, breadth, radius, base, height;
+    scanf("%d", &side);   
+    scanf("%d", &length);     
+    scanf("%d", &breadth);
+    scanf("%d", &radius);     
+    scanf("%d", &base);      
+    scanf("%d", &height);     
+    int area_square = side * side;
+    int area_rectangle = length * breadth;
+    float area_circle = PI * radius * radius;
+    float area_triangle = 0.5 * base * height;
+    printf("Area of Square=%d\n", area_square);
+    printf("Area of Rectangle=%d\n", area_rectangle);
+    printf("Area of Circle=%.2f\n", area_circle);
+    printf("Area of Triangle=%.0f\n", area_triangle);
+    return 0;
+}
