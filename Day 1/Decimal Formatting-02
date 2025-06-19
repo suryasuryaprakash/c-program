@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   float num;
+    scanf("%f",&num);
+    float final = floor(num*100)/100;
+    printf("%.2f\n",final);
+    printf("%.2f",num);
+    
+    return 0;
+}
