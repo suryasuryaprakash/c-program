@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+     int n, s = 0, t;
+    scanf("%d", &n);
+    t = n;
+    while (t > 0) {
+        s += t % 10;
+        t /= 10;
+    }
+    if (n % s == 0) {
+        printf("Harshad Number\n");
+    } else {
+        printf("Not Harshad Number\n");
+    }
+
+    return 0;
+}
